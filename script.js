@@ -63,8 +63,10 @@
 	$(".nature-close").on('click', function () {
 		$("body").removeClass("nature-on");
 	});
-
+      function disableTouchScroll(e){
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+      }
 	
 })(jQuery);
-
-//c
